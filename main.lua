@@ -47,7 +47,7 @@ dialog:canvas{
     local imgLado = getLayerImage("Lado")
     local gc = ev.context
 
-    gc:color(Color{ r = 40, g = 40, b = 40 })
+    ev.context.color = Color{ r = 40, g = 40, b = 40 }
     gc:fillRect(Rectangle(0, 0, 300, 200))
 
     if imgFrente then
